@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN AND CREATE FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="registration-form">
+                <input type="text" placeholder="name"/>
+               <input type="text" placeholder="password"/>
+               <input type="text" placeholder="email id"/>
+               <button>Create</button>
+               <p class="message"> Already registered? <a href="#">login</a>
+           </p> 
+            </form>
+
+            <form class="lodin-form">
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+
+<button>login</button>
+<p class="message">Not Registered? <a href="#"> Register</a></p>
+            </form>
+        </div>
+    </div>
+    <script>
+        $('.message a').click(function(){
+            console.log("clicked")
+      $('form').animate({height: "toggle", opacity: "toggle"}, "slow");});
+    </script>
+    
+    
+</body>
+</html>
